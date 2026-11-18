@@ -1,4 +1,4 @@
-# TenantEase AI
+﻿# TenantEase AI
 
 TenantEase AI is a local proof of concept for intelligent rent collection, payment monitoring, simulated notifications, predictive late-payment risk, and owner-facing recommendations. It is designed for property owners and managers and uses synthetic data only. It does not represent confirmed Cynbit customer data or production capability.
 
@@ -6,7 +6,8 @@ TenantEase AI is a local proof of concept for intelligent rent collection, payme
 
 - Monthly rent-obligation generation with tenant/month idempotency.
 - Configurable due dates, documented grace period, and overdue detection.
-- Pending payment recording followed by explicit verification.
+- Pending payment recording followed by explicit verification and partial-payment reconciliation.
+- Owner registration/login with Argon2 password hashing and owner-scoped property data.
 - Simulated advance and overdue notifications with duplicate prevention.
 - Logistic Regression and Random Forest late-payment modeling.
 - Tenant- and time-isolated evaluation.
@@ -15,11 +16,11 @@ TenantEase AI is a local proof of concept for intelligent rent collection, payme
 
 ## Architecture
 
-`app.py` contains the Streamlit presentation layer. `database/` contains SQLite/SQLAlchemy setup, models, and synthetic seeding. `src/data/` generates and validates data. `src/ml/` trains, evaluates, loads, and explains the model. `src/services/` contains tenant, rent, payment, notification, risk, and recommendation logic. `tests/` contains the automated suite.
+`app.py` contains the Streamlit presentation and authentication flow. `database/` contains SQLite/SQLAlchemy setup, models, migrations, and synthetic seeding. `src/data/` generates and validates data. `src/ml/` trains, evaluates, loads, and explains the model. `src/services/` contains authentication, tenant, rent, payment, notification, financial, risk, and recommendation logic. `tests/` contains the automated suite.
 
 ## Technology stack
 
-Python 3.11+, Streamlit, SQLite, SQLAlchemy, Pandas, NumPy, scikit-learn 1.7.2, Plotly, Joblib, and Pytest.
+Python 3.11+, Streamlit, SQLite, SQLAlchemy, Pandas, NumPy, scikit-learn 1.7.2, Plotly, Joblib, Argon2-cffi, and Pytest.
 
 ## Dataset and model results
 
@@ -41,11 +42,13 @@ These are synthetic-data results and do not guarantee production performance.
 
 ## Database design
 
-The SQLite database contains `properties`, `tenants`, `rent_records`, `payments`, `notification_logs`, and `prediction_logs`. Foreign keys and unique constraints enforce tenant/property relationships, one rent obligation per tenant/month, unique transaction references, and idempotent notification types.
+The SQLite database contains seven tables: `owners`, `properties`, `tenants`, `rent_records`, `payments`, `notification_logs`, and `prediction_logs`. Properties belong to owners; tenants belong to properties; rent records belong to tenants; payments belong to rent records; notifications belong to tenants/rent records; and predictions belong to tenants/rent records. Foreign keys and unique constraints enforce owner/property relationships, one rent obligation per tenant/month, unique transaction references, and idempotent notification types. Backend service queries scope operational data to the authenticated owner.
+
+Owners register with a unique email and a password hashed by Argon2. Plaintext passwords are never stored. The current session stores the authenticated owner identity and protected pages require that identity before querying owner data. This is a local proof of concept, not a claim of production-grade identity infrastructure.
 
 ## Rent collection workflow
 
-The default due day is the first. Unpaid rent is `PENDING` from the due date through the third grace day and becomes `OVERDUE` on the fifth. The assessment reminder convention maps December 1 to November 26 using the configured five-calendar-day subtraction. Verified payments transition rent to `PAID`; recording or notifying alone does not.
+The default due day is the first. Unpaid rent is `PENDING` from the due date through the third grace day and becomes `OVERDUE` on the fifth. The assessment reminder convention maps December 1 to November 26 using the configured five-calendar-day subtraction. A recorded payment remains pending until verification. Financial totals sum only verified transactions: zero received is pending/overdue by date, a verified amount below rent is `PARTIALLY_PAID`, an exact amount is `PAID`, and an excess is retained as an overpayment flag. Outstanding balance is rent less verified receipts, and dashboard/analytics collection rate is verified collected amount divided by expected rent.
 
 ## Windows PowerShell setup
 
@@ -57,6 +60,8 @@ py -3.11 -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
+
+`.env.example` documents an optional local database URL override. Copy it to `.env` only when needed; do not put passwords, API keys, or real tenant data in environment files.
 
 If PowerShell blocks activation for the current process, use:
 
@@ -86,11 +91,26 @@ Open `http://localhost:8505`.
 ## Test the project
 
 ```powershell
-python -m compileall -q app.py config database src tests
+python -m compileall -q app.py config database src tests scripts reports/generate_pdfs.py
 python -m pytest -v
 ```
 
-The verified suite contains 12 passing tests. Streamlit page execution was also verified programmatically for all six sections with zero exceptions.
+The verified suite contains 23 passing tests. The suite covers authentication, owner isolation, CRUD, dataset validation, date boundaries, rent generation, verified and partial payments, financial aggregation, grace-period/overdue behavior, notification idempotency, saved-model prediction, risk thresholds, and recommendations.
+
+## Separate demonstration database
+
+The repeatable demo seed creates a separate local SQLite file and a synthetic owner account:
+
+```powershell
+python scripts/seed_demo_database.py
+$env:TENANTEASE_DATABASE_URL = "sqlite:///demo/tenantease_demo.db"
+python -m streamlit run app.py --server.port 8505
+```
+
+Local synthetic demo login (not a production credential):
+
+- Email: `demo.owner@example.test`
+- Password: `DemoOwner123!`
 
 ## Demonstration workflow
 
@@ -102,15 +122,15 @@ The verified suite contains 12 passing tests. Streamlit page execution was also 
 6. Use December 3 to show the grace period still active.
 7. Use December 5 to show overdue rent and the overdue alert.
 8. Record a payment in **Rent & Payments**; it remains pending verification.
-9. Verify it and confirm the rent status becomes `PAID` while notification history remains.
+9. Verify it and confirm the status is recalculated from verified receipts (`PAID` only when fully covered; otherwise `PARTIALLY_PAID`) while notification history remains.
 10. The AI Risk page scores only actual tenants with at least two verified payment cycles; otherwise it displays an insufficient-history message.
 
 The date simulator changes status evaluation only. It does not modify historical payment timestamps.
 
 ## Repository hygiene
 
-The local SQLite file (`*.db`), virtual environment, Python caches, test cache, logs, Streamlit secrets, and generated Joblib model files are ignored by Git. Synthetic CSV data and reports remain available as project artifacts. No credentials or real tenant personal information are included.
+The local SQLite file (`*.db`), virtual environment, Python caches, test cache, logs, `.env` files, Streamlit secrets, and generated Joblib model files are ignored by Git. `.env.example` contains no secrets. Synthetic CSV data and reports remain available as project artifacts. No real tenant personal information is included; demo credentials are synthetic and local-only.
 
 ## Limitations and future work
 
-This is a proof of concept. The model is synthetic-data trained and not production-calibrated. Notifications are simulated, payment-provider reconciliation is absent, and authentication, authorization, audit controls, fairness review, drift monitoring, and deployment infrastructure are future work. Any production rollout should use representative consented data and human approval for tenant communications.
+This is a proof of concept. The model is synthetic-data trained and not production-calibrated. Notifications are simulated, payment-provider reconciliation is absent, and the local authentication/authorization implementation needs production hardening, secure secret/session management, audit controls, fairness review, drift monitoring, and deployment infrastructure. Payment gateway, real SMS/WhatsApp/email delivery, and production identity integrations are future work. Any production rollout should use representative consented data and human approval for tenant communications.

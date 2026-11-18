@@ -1,53 +1,32 @@
-# TenantEase AI
+﻿# TenantEase AI
 ## Technical Approach Report
 
-**Cynbit AI/ML Engineer Intern Assessment**  
-**Status:** Verified proof of concept  
-**Runtime:** Python 3.11.9 in the project virtual environment  
+**Cynbit AI/ML Engineer Intern Assessment**
+**Status:** Verified local proof of concept
+**Runtime:** Python 3.11.9 in the project virtual environment
 **Prepared:** November 2026
 
 ---
 
 ## Contents
 
-1. System architecture  
-2. Technology stack  
-3. Application architecture  
-4. Database schema and relationships  
-5. Synthetic dataset generation  
-6. Feature engineering and target definition  
-7. Leakage prevention  
-8. Training and evaluation methodology  
-9. Logistic Regression baseline  
-10. Random Forest model  
-11. Model comparison  
-12. Risk thresholds  
-13. Model explainability  
-14. Rent lifecycle  
-15. Notification simulation  
-16. Payment verification  
-17. Recommendation engine  
-18. Streamlit dashboard  
-19. Testing strategy  
-20. Limitations and future improvements
+1. System architecture  2. Technology stack  3. Application architecture  4. Database schema and relationships  5. Owner authentication and isolation  6. Synthetic dataset generation  7. Feature engineering and target definition  8. Leakage prevention  9. Training and evaluation methodology  10. Model comparison  11. Risk thresholds and explainability  12. Rent lifecycle and financial accounting  13. Notification simulation  14. Payment verification  15. Recommendation engine  16. Streamlit dashboard  17. Testing strategy  18. Limitations and future improvements
 
 ## 1. System architecture
 
-TenantEase AI is a single-process local application with boundaries between presentation, persistence, data science, and business services.
+TenantEase AI is a single-process local application with boundaries between presentation, authentication, persistence, data science, and business services.
 
 ```text
 Streamlit UI (app.py)
         |
-        +--> Collection services --> SQLAlchemy --> SQLite
-        |       |                     tenants, rent, payments,
-        |       |                     notifications, predictions
+        +--> Auth + collection services --> SQLAlchemy --> SQLite
+        |       |                          owners, properties, tenants,
+        |       |                          rent, payments, notifications,
+        |       |                          predictions
         |
         +--> ML services --> Joblib pipeline --> risk + explanation
-        |
         +--> Plotly analytics and owner recommendations
 ```
-
-The UI calls services rather than embedding collection rules in page rendering. The database is local and persistent. The ML pipeline is trained offline and loaded for inference.
 
 ## 2. Technology stack
 
@@ -59,43 +38,41 @@ The UI calls services rather than embedding collection rules in page rendering. 
 | Data | Pandas, NumPy | Generation, validation, analytics |
 | ML | scikit-learn 1.7.2 | Logistic Regression and Random Forest |
 | Serialization | Joblib | Persisted preprocessing/model pipeline |
+| Password hashing | Argon2-cffi | Owner password hashes |
 | Charts | Plotly | Dashboard and analytics visualizations |
-| Testing | Pytest | 12 automated tests |
+| Testing | Pytest | 23 automated tests |
 
 The active scikit-learn version is pinned exactly in `requirements.txt` to keep training and inference compatible.
 
 ## 3. Application architecture
 
-- `app.py`: Streamlit layout, navigation, forms, charts, empty states, and service calls.
-- `config/settings.py`: project paths, database URL, business configuration, and model version.
-- `database/db.py`: SQLAlchemy engine, session factory, initialization, and isolated test sessions.
-- `database/models.py`: relational schema and constraints.
-- `database/seed.py`: clearly synthetic demo property and tenants.
-- `src/data/`: synthetic generation and dataset validation.
-- `src/ml/`: training, evaluation, prediction, and explanation.
-- `src/services/`: tenant, rent, payment, notification, risk, and recommendation workflows.
-- `tests/`: dataset, date, CRUD, payment, notification, risk, and recommendation tests.
+`app.py` handles Streamlit layout, authentication, navigation, forms, charts, and service calls. `config/` holds paths and business settings. `database/` holds SQLAlchemy setup, models, migration compatibility, and synthetic seeding. `src/data/` generates/validates data, `src/ml/` trains/evaluates/loads/explains the model, and `src/services/` contains authentication, tenant, rent, payment, financial, notification, risk, and recommendation workflows.
 
 ## 4. Database schema and relationships
 
-The schema contains six principal tables:
+The schema contains seven principal tables:
 
 | Table | Purpose |
 |---|---|
-| `properties` | Property metadata and unit count |
+| `owners` | Owner identity, unique email, Argon2 password hash, active state |
+| `properties` | Property metadata, unit count, and owner foreign key |
 | `tenants` | Synthetic tenant profile, rent, unit, and due day |
 | `rent_records` | One monthly rent obligation per tenant |
-| `payments` | Recorded payment and verification state |
+| `payments` | Recorded payment amount and verification state |
 | `notification_logs` | Simulated reminder and overdue delivery history |
-| `prediction_logs` | Optional persisted risk predictions |
+| `prediction_logs` | Optional persisted risk prediction records |
 
-Relationships are enforced with foreign keys. `rent_records` has a unique `(tenant_id, rent_month)` constraint. Payment transaction references are unique. Notification logs have a unique `(tenant_id, rent_record_id, notification_type)` constraint, which supports idempotency.
+Properties belong to owners; tenants belong to properties; rent records belong to tenants; payments belong to rent records; notifications reference tenants/rent records; predictions reference tenants/rent records. `rent_records` has a unique `(tenant_id, rent_month)` constraint. Payment transaction references are unique. Notification logs have a unique `(tenant_id, rent_record_id, notification_type)` constraint.
 
-## 5. Synthetic dataset generation
+## 5. Owner authentication and isolation
 
-`src/data/generate_dataset.py` uses random seed 42 and generates 200 synthetic tenants with 28 cycles each, producing 5,600 rows. Tenant behavior profiles represent generally on-time, occasional-late, and frequently-late patterns with variation in rent, method, and delay.
+Registration validates a unique email and stores only an Argon2 password hash. Login verifies the supplied password with `argon2.PasswordHasher`; logout clears the authenticated owner session. Protected dashboard sections require an authenticated owner.
 
-All names, contacts, identifiers, and outcomes are synthetic. The records are not Cynbit customer data. A regression fix ensures small datasets generated inside tests do not overwrite the canonical 5,600-row CSV artifacts.
+Properties carry `owner_id`. Tenant, rent, payment, notification, financial, and risk queries derive ownership through the property relationship rather than trusting an owner ID supplied by a form. This prevents normal service paths from reading or mutating another ownerâ€™s records. Production deployment would still require hardened session, secret, transport, audit, recovery, and role-management controls.
+
+## 6. Synthetic dataset generation
+
+`src/data/generate_dataset.py` uses random seed 42 and generates 200 synthetic tenants with 28 cycles each, producing 5,600 rows. Profiles represent generally on-time, occasional-late, and frequently-late behavior with rent, method, and delay variation. All names, contacts, identifiers, and outcomes are synthetic and not Cynbit customer data.
 
 | Validation check | Result |
 |---|---:|
@@ -106,60 +83,30 @@ All names, contacts, identifiers, and outcomes are synthetic. The records are no
 | Duplicate tenant-cycle records | 0 |
 | Target classes | Both present |
 
-## 6. Feature engineering and target definition
+## 7. Feature engineering and target definition
 
-Features include `monthly_rent`, `tenancy_months`, `payment_method`, `previous_late_payments`, `average_delay_days`, `last_payment_delay`, `on_time_payment_rate`, `previous_payment_count`, and `days_until_due`.
+Features include `monthly_rent`, `tenancy_months`, `payment_method`, `previous_late_payments`, `average_delay_days`, `last_payment_delay`, `on_time_payment_rate`, `previous_payment_count`, and `days_until_due`. The target `late_payment` is 1 when eventual payment is after due date and 0 when on or before it. Current payment date, delay, and outcome are excluded from features.
 
-The target `late_payment` is 1 when the eventual payment date is after the due date and 0 when it is on or before the due date. Historical features use prior cycles only. The current payment date and current delay are not features.
+## 8. Leakage prevention
 
-## 7. Leakage prevention
+Rows use a seven-day pre-due information boundary. Training uses tenants 1-160 and cycles 1-22 (3,520 rows); testing uses tenants 161-200 and cycles 23-28 (240 rows). There is no tenant overlap, and test due dates are later than training due dates. This conservative synthetic evaluation is not a production guarantee.
 
-Every generated row declares `days_until_due=7`, representing the information boundary used for prediction. The training split is tenant- and time-isolated:
+## 9. Training and evaluation methodology
 
-- Training: tenants 1–160, cycles 1–22, 3,520 rows.
-- Test: tenants 161–200, cycles 23–28, 240 rows.
+Numeric features use median imputation and standardization for Logistic Regression. Payment method uses most-frequent imputation and one-hot encoding. Both estimators use random state 42 and class balancing. Metrics include accuracy, precision, recall, F1, ROC-AUC, PR-AUC, Brier score, and confusion matrix. Selection prioritizes F1 and then PR-AUC rather than accuracy alone.
 
-There is no tenant overlap, and the earliest test due date is later than the latest training due date. This is more conservative than randomly splitting repeated tenant histories. Measured performance is not a production guarantee.
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC | PR-AUC | Brier |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.6792 | 0.5692 | 0.7789 | 0.6578 | 0.7830 | 0.6792 | 0.2062 |
+| Random Forest | 0.7083 | 0.6016 | 0.7789 | 0.6789 | 0.7787 | 0.6747 | 0.2044 |
 
-## 8. Training and evaluation methodology
+Random Forest was selected because it achieved the higher F1 and slightly better Brier score. Logistic Regression had marginally higher ROC-AUC and PR-AUC. The majority baseline had accuracy 0.6042, F1 0.0000, ROC-AUC 0.5000, PR-AUC 0.3958, and Brier score 0.2399.
 
-Numeric features use median imputation and standardization for Logistic Regression. Categorical payment method uses most-frequent imputation and one-hot encoding. Both estimators use reproducible random state 42 and class balancing.
+## 10. Model comparison
 
-Metrics include accuracy, precision, recall, F1, ROC-AUC, PR-AUC, Brier score, and confusion matrix. A majority-class baseline is included for context. Model selection prioritizes F1 and then PR-AUC rather than accuracy alone.
+The selected Random Forest uses 180 estimators, maximum depth 8, minimum leaf size 3, class balancing, and random state 42. Both models use the same feature schema and preprocessing. The saved artifact is trained with the pinned scikit-learn version.
 
-## 9. Logistic Regression baseline
-
-| Metric | Result |
-|---|---:|
-| Accuracy | 0.6792 |
-| Precision | 0.5692 |
-| Recall | 0.7789 |
-| F1 | 0.6578 |
-| ROC-AUC | 0.7830 |
-| PR-AUC | 0.6792 |
-| Brier score | 0.2062 |
-
-## 10. Random Forest model
-
-The comparison model uses 180 estimators, maximum depth 8, minimum leaf size 3, class balancing, and random state 42.
-
-| Metric | Result |
-|---|---:|
-| Accuracy | 0.7083 |
-| Precision | 0.6016 |
-| Recall | 0.7789 |
-| F1 | 0.6789 |
-| ROC-AUC | 0.7787 |
-| PR-AUC | 0.6747 |
-| Brier score | 0.2044 |
-
-## 11. Model comparison
-
-Random Forest was selected because it achieved the higher F1 score and slightly better Brier score. Logistic Regression had marginally higher ROC-AUC and PR-AUC. The majority baseline had accuracy 0.6042, F1 0.0000, ROC-AUC 0.5000, PR-AUC 0.3958, and Brier score 0.2399.
-
-The differences are useful for this prototype, but neither model has been calibrated or validated on representative real-world data.
-
-## 12. Risk thresholds
+## 11. Risk thresholds and explainability
 
 | Risk | Threshold |
 |---|---:|
@@ -167,56 +114,40 @@ The differences are useful for this prototype, but neither model has been calibr
 | Medium | `0.30 to < 0.65` |
 | High | `>= 0.65` |
 
-These thresholds are configurable prototype decisions. They require calibration, policy review, and monitoring before operational use.
+Thresholds are configurable prototype decisions and require calibration, policy review, and monitoring. Explanations reference historical late count, average delay, and on-time rate. They state association, not causation; risk is distinct from actual overdue status.
 
-## 13. Model explainability
+## 12. Rent lifecycle and financial accounting
 
-Prediction explanations reference historical late count, average delay, and on-time rate. The wording states that the indicators are associative and not causal. The dashboard presents explanations and recommendations alongside probability and actual rent status.
+`generate_rent_records` creates one obligation per active tenant and month and is idempotent. `financial_service.py` is the shared calculation layer used by dashboard, analytics, rent views, and notification status checks.
 
-## 14. Rent lifecycle implementation
+For each obligation, `verified_total` sums only payments with `verification_status == VERIFIED`. Pending and rejected transactions are excluded. Outstanding balance is rent less verified receipts, floored at zero, with excess retained as an overpayment flag. Zero receipt is `PENDING` or `OVERDUE` by date; a positive receipt below rent is `PARTIALLY_PAID`; equal or greater verified total is `PAID`. Unpaid rent is pending through the three grace days and overdue from the fifth for the default first-of-month schedule.
 
-`generate_rent_records` creates one obligation per active tenant and month and is idempotent. `refresh_statuses` applies this state machine:
+The same service calculates expected rent, verified collected rent, pending balance, overdue balance, partial balance, total outstanding, and collection rate. Collection rate is verified collected amount divided by expected rent, never the full face value of obligations marked paid. Simulated dates do not rewrite historical timestamps.
 
-- Before due date: `UPCOMING`.
-- Due date through the next three calendar days: `PENDING`.
-- Starting on the fourth day after due date, which is the default fifth for a first-of-month due date: `OVERDUE`.
-- Verified payment at any point: `PAID`.
+## 13. Notification simulation
 
-The implementation handles month lengths through `safe_due_date`, including February and leap years. Demo-date changes only recalculate status; they do not rewrite payment timestamps.
+`run_notification_simulation` creates advance reminders and overdue alerts with a database uniqueness constraint and existence check. It never sends external communications. Alerts include outstanding overdue balances, including partially paid obligations, and are idempotent.
 
-## 15. Notification simulation
+## 14. Payment verification
 
-`run_notification_simulation` creates advance reminders and overdue alerts with a database uniqueness constraint and existence check. It stores messages and simulated delivery metadata but never sends external communications.
+`record_payment` writes a pending transaction after owner-scope validation. `verify_payment` changes that transaction to `VERIFIED`, then recalculates the obligation from all verified transactions. A partial verified transaction therefore produces `PARTIALLY_PAID`; it does not mark the entire obligation `PAID`. Only a fully covered obligation becomes `PAID`. History and transaction references are preserved.
 
-## 16. Payment verification
+## 15. Recommendation engine
 
-`record_payment` writes a pending payment. `verify_payment` changes the payment to `VERIFIED`, marks the associated rent record `PAID`, and preserves notification history. A notification alone never marks rent paid.
+Recommendations are deterministic templates based on predicted category, historical late count, average delay, and current rent status. They are owner-facing decision support and are not sent automatically to tenants.
 
-## 17. Recommendation engine
+## 16. Streamlit dashboard
 
-Recommendations are deterministic templates based on predicted category, historical late count, average delay, and current rent status. They are owner-facing decision support. The system does not send recommendations automatically to tenants.
+The six sections are Dashboard, Tenants, Rent & Payments, Notifications, AI Risk Intelligence, and Analytics. They provide owner-scoped KPIs, verified collection trends, status distributions, transaction activity, CRUD forms, payment verification, notification simulation, gated risk predictions, explanations, recommendations, and evaluation views. Financial figures use the centralized financial service, and predicted risk is shown separately from actual overdue status.
 
-## 18. Streamlit dashboard
+## 17. Testing strategy
 
-The dashboard includes:
+The final suite contains 23 passing tests covering dataset reproducibility/validation, canonical-artifact preservation, date boundaries, tenant/property CRUD, owner registration/login/logout/isolation, rent generation, no/partial/full/over payments, pending/rejected exclusion, financial aggregation and duplicate-join prevention, grace-period and overdue behavior, reminder idempotency, risk thresholds, saved-model prediction, and recommendations.
 
-1. Dashboard overview with database-derived KPIs, collection trend, status distribution, recent payments, overdue queue, and high-risk summary.
-2. Tenant management with search, add/edit forms, property/unit details, and rent history.
-3. Rent & Payments with status tabs, generation, recording, and verification.
-4. Notification Center with simulation, filters, messages, and delivery status.
-5. AI Risk Intelligence with actual-history gating, probabilities, explanations, and recommendations.
-6. Analytics with collection, payment delay, risk, and evaluation views.
+The financial regression scenario with two INR 20,000 obligations and INR 15,000 verified receipts per obligation reconciles to expected INR 40,000, collected INR 30,000, outstanding INR 10,000, and 75% collection. Database tests use isolated SQLite sessions.
 
-All six pages executed with zero exceptions through Streamlit's testing API. A live server returned HTTP 200 during acceptance testing.
+`prediction_logs` supports persisted prediction records, but the current dashboardâ€™s display-time risk scoring is not a complete audit log of every rendered prediction. This is a known limitation.
 
-## 19. Testing strategy
+## 18. Limitations and future improvements
 
-The final suite contains 12 passing tests covering dataset reproducibility and validation, canonical-artifact preservation, date boundaries, tenant/property CRUD, rent generation, payment verification, grace-period and overdue detection, reminder scheduling and duplicate prevention, risk thresholds, saved-model prediction, and recommendation generation.
-
-An isolated SQLite session is used for database tests. A separate controlled workflow verified five-tenant generation, reminders, pending/grace/overdue transitions, payment verification, notification preservation, and duplicate prevention.
-
-## 20. Limitations and future improvements
-
-The model is trained on synthetic data, the current demo database has no verified payment history, notifications are simulated, and no production authentication, payment-provider integration, message delivery, calibration, fairness audit, drift monitoring, or deployment infrastructure is included.
-
-Recommended next steps are representative data collection with consent, temporal backtesting, probability calibration, threshold governance, fairness analysis, model monitoring, provider reconciliation, role-based access, audit export, and human approval workflows for communications.
+The model is synthetic-data trained and not production-calibrated. Notifications are simulated, payment-provider integration and real email/SMS/WhatsApp delivery are absent, and local authentication needs production hardening. Future work includes representative consented data, temporal backtesting, calibration, threshold governance, fairness analysis, monitoring, provider reconciliation, stronger role-based access, audit export, prediction-log policy, and human approval for communications.

@@ -23,32 +23,29 @@ endobj
 << /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Length 1967 >>
+<< /Length 1771 >>
 stream
 0.060 0.160 0.260 rg BT /F1 22 Tf 54.0 766.0 Td (Contents) Tj ET
-0.120 0.180 0.250 rg BT /F1 11 Tf 54.0 726.0 Td (TenantEase AI) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 708.0 Td (Technical Approach Report) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 693.0 Td (Contents) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 678.0 Td (1. System architecture) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 663.0 Td (2. Technology stack) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 648.0 Td (3. Application architecture) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 633.0 Td (4. Database schema and relationships) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 618.0 Td (5. Synthetic dataset generation) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 603.0 Td (6. Feature engineering and target definition) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 588.0 Td (7. Leakage prevention) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 573.0 Td (8. Training and evaluation methodology) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 558.0 Td (9. Logistic Regression baseline) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 543.0 Td (10. Random Forest model) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 528.0 Td (11. Model comparison) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 513.0 Td (12. Risk thresholds) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 498.0 Td (13. Model explainability) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 483.0 Td (14. Rent lifecycle implementation) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 468.0 Td (15. Notification simulation) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 453.0 Td (16. Payment verification) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 438.0 Td (17. Recommendation engine) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 423.0 Td (18. Streamlit dashboard) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 408.0 Td (19. Testing strategy) Tj ET
-0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 393.0 Td (20. Limitations and future improvements) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 726.0 Td (Technical Approach Report) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 711.0 Td (Contents) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 696.0 Td (1. System architecture) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 681.0 Td (2. Technology stack) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 666.0 Td (3. Application architecture) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 651.0 Td (4. Database schema and relationships) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 636.0 Td (5. Owner authentication and isolation) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 621.0 Td (6. Synthetic dataset generation) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 606.0 Td (7. Feature engineering and target definition) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 591.0 Td (8. Leakage prevention) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 576.0 Td (9. Training and evaluation methodology) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 561.0 Td (10. Model comparison) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 546.0 Td (11. Risk thresholds and explainability) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 531.0 Td (12. Rent lifecycle and financial accounting) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 516.0 Td (13. Notification simulation) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 501.0 Td (14. Payment verification) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 486.0 Td (15. Recommendation engine) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 471.0 Td (16. Streamlit dashboard) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 456.0 Td (17. Testing strategy) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 441.0 Td (18. Limitations and future improvements) Tj ET
 endstream
 endobj
 7 0 obj
@@ -80,374 +77,345 @@ endobj
 << /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 8 0 R >>
 endobj
 10 0 obj
-<< /Length 6394 >>
+<< /Length 6775 >>
 stream
-0.060 0.160 0.260 rg BT /F1 18 Tf 54.0 780.0 Td (TenantEase AI) Tj ET
-0.120 0.550 0.500 RG 1.5 w 54 756 m 541 756 l S
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 732.0 Td (Technical Approach Report) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 712.0 Td (**Cynbit AI/ML Engineer Intern Assessment** **Status:** Verified proof of concept) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 699.0 Td (**Runtime:** Python 3.11.9 in the project virtual environment **Prepared:** November 2026) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 681.0 Td (---) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 657.0 Td (Contents) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 637.0 Td (1. System architecture 2. Technology stack 3. Application architecture 4. Database schema) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 624.0 Td (and relationships 5. Synthetic dataset generation 6. Feature engineering and target) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 611.0 Td (definition 7. Leakage prevention 8. Training and evaluation methodology 9. Logistic) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 598.0 Td (Regression baseline 10. Random Forest model 11. Model comparison 12. Risk thresholds 13.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 585.0 Td (Model explainability 14. Rent lifecycle 15. Notification simulation 16. Payment) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 572.0 Td (verification 17. Recommendation engine 18. Streamlit dashboard 19. Testing strategy 20.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 559.0 Td (Limitations and future improvements) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 535.0 Td (1. System architecture) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 515.0 Td (TenantEase AI is a single-process local application with boundaries between presentation,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 502.0 Td (persistence, data science, and business services.) Tj ET
-0.940 0.970 0.980 rg 54 481 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 484.0 Td (Streamlit UI \(app.py\)) Tj ET
-0.940 0.970 0.980 rg 54 467 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 470.0 Td (        |) Tj ET
-0.940 0.970 0.980 rg 54 453 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 456.0 Td (        +--> Collection services --> SQLAlchemy --> SQLite) Tj ET
-0.940 0.970 0.980 rg 54 439 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 442.0 Td (        |       |                     tenants, rent, payments,) Tj ET
-0.940 0.970 0.980 rg 54 425 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 428.0 Td (        |       |                     notifications, predictions) Tj ET
-0.940 0.970 0.980 rg 54 411 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 414.0 Td (        |) Tj ET
-0.940 0.970 0.980 rg 54 397 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 400.0 Td (        +--> ML services --> Joblib pipeline --> risk + explanation) Tj ET
-0.940 0.970 0.980 rg 54 383 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 386.0 Td (        |) Tj ET
-0.940 0.970 0.980 rg 54 369 487 14 re f
-0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 372.0 Td (        +--> Plotly analytics and owner recommendations) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 350.0 Td (The UI calls services rather than embedding collection rules in page rendering. The) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 337.0 Td (database is local and persistent. The ML pipeline is trained offline and loaded for) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 324.0 Td (inference.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 300.0 Td (2. Technology stack) Tj ET
-0.090 0.320 0.380 rg 54 260 487 20 re f
-1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 266.0 Td (Area) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 221.3 266.0 Td (Technology) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 383.7 266.0 Td (Implementation use) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 260 m 541 260 l S
-1.000 1.000 1.000 rg 54 240 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 246.0 Td (Language) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 246.0 Td (Python 3.11+) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 246.0 Td (Application and ML) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 240 m 541 240 l S
-0.970 0.980 0.990 rg 54 220 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 226.0 Td (UI) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 226.0 Td (Streamlit) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 226.0 Td (Six-section dashboard) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 220 m 541 220 l S
-1.000 1.000 1.000 rg 54 200 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 206.0 Td (Persistence) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 206.0 Td (SQLite + SQLAlchemy) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 206.0 Td (Local relational state) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 200 m 541 200 l S
-0.970 0.980 0.990 rg 54 180 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 186.0 Td (Data) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 186.0 Td (Pandas, NumPy) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 186.0 Td (Generation,) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 180 m 541 180 l S
-1.000 1.000 1.000 rg 54 160 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 166.0 Td (ML) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 166.0 Td (scikit-learn 1.7.2) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 166.0 Td (Logistic Regression) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 160 m 541 160 l S
-0.970 0.980 0.990 rg 54 140 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 146.0 Td (Serialization) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 146.0 Td (Joblib) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 146.0 Td (Persisted) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 140 m 541 140 l S
-1.000 1.000 1.000 rg 54 120 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 126.0 Td (Charts) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 126.0 Td (Plotly) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 126.0 Td (Dashboard and) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 120 m 541 120 l S
-0.970 0.980 0.990 rg 54 100 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 106.0 Td (Testing) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 106.0 Td (Pytest) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 106.0 Td (12 automated tests) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 100 m 541 100 l S
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 90.0 Td (The active scikit-learn version is pinned exactly in `requirements.txt` to keep training) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 77.0 Td (and inference compatible.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 788.0 Td (?# TenantEase AI) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 764.0 Td (Technical Approach Report) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 744.0 Td (**Cynbit AI/ML Engineer Intern Assessment** **Status:** Verified local proof of concept) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 731.0 Td (**Runtime:** Python 3.11.9 in the project virtual environment **Prepared:** November 2026) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 713.0 Td (---) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 689.0 Td (Contents) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 669.0 Td (1. System architecture 2. Technology stack 3. Application architecture 4. Database schema) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 656.0 Td (and relationships 5. Owner authentication and isolation 6. Synthetic dataset generation 7.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 643.0 Td (Feature engineering and target definition 8. Leakage prevention 9. Training and evaluation) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 630.0 Td (methodology 10. Model comparison 11. Risk thresholds and explainability 12. Rent lifecycle) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 617.0 Td (and financial accounting 13. Notification simulation 14. Payment verification 15.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 604.0 Td (Recommendation engine 16. Streamlit dashboard 17. Testing strategy 18. Limitations and) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 591.0 Td (future improvements) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 567.0 Td (1. System architecture) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 547.0 Td (TenantEase AI is a single-process local application with boundaries between presentation,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 534.0 Td (authentication, persistence, data science, and business services.) Tj ET
+0.940 0.970 0.980 rg 54 513 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 516.0 Td (Streamlit UI \(app.py\)) Tj ET
+0.940 0.970 0.980 rg 54 499 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 502.0 Td (        |) Tj ET
+0.940 0.970 0.980 rg 54 485 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 488.0 Td (        +--> Auth + collection services --> SQLAlchemy --> SQLite) Tj ET
+0.940 0.970 0.980 rg 54 471 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 474.0 Td (        |       |                          owners, properties, tenants,) Tj ET
+0.940 0.970 0.980 rg 54 457 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 460.0 Td (        |       |                          rent, payments, notifications,) Tj ET
+0.940 0.970 0.980 rg 54 443 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 446.0 Td (        |       |                          predictions) Tj ET
+0.940 0.970 0.980 rg 54 429 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 432.0 Td (        |) Tj ET
+0.940 0.970 0.980 rg 54 415 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 418.0 Td (        +--> ML services --> Joblib pipeline --> risk + explanation) Tj ET
+0.940 0.970 0.980 rg 54 401 487 14 re f
+0.160 0.280 0.350 rg BT /F2 8 Tf 60.0 404.0 Td (        +--> Plotly analytics and owner recommendations) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 376.0 Td (2. Technology stack) Tj ET
+0.090 0.320 0.380 rg 54 336 487 20 re f
+1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 342.0 Td (Area) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 221.3 342.0 Td (Technology) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 383.7 342.0 Td (Implementation use) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 336 m 541 336 l S
+1.000 1.000 1.000 rg 54 316 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 322.0 Td (Language) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 322.0 Td (Python 3.11+) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 322.0 Td (Application and ML) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 316 m 541 316 l S
+0.970 0.980 0.990 rg 54 296 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 302.0 Td (UI) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 302.0 Td (Streamlit) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 302.0 Td (Six-section dashboard) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 296 m 541 296 l S
+1.000 1.000 1.000 rg 54 276 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 282.0 Td (Persistence) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 282.0 Td (SQLite + SQLAlchemy) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 282.0 Td (Local relational state) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 276 m 541 276 l S
+0.970 0.980 0.990 rg 54 256 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 262.0 Td (Data) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 262.0 Td (Pandas, NumPy) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 262.0 Td (Generation,) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 256 m 541 256 l S
+1.000 1.000 1.000 rg 54 236 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 242.0 Td (ML) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 242.0 Td (scikit-learn 1.7.2) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 242.0 Td (Logistic Regression) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 236 m 541 236 l S
+0.970 0.980 0.990 rg 54 216 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 222.0 Td (Serialization) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 222.0 Td (Joblib) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 222.0 Td (Persisted) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 216 m 541 216 l S
+1.000 1.000 1.000 rg 54 196 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 202.0 Td (Password hashing) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 202.0 Td (Argon2-cffi) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 202.0 Td (Owner password hashes) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 196 m 541 196 l S
+0.970 0.980 0.990 rg 54 176 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 182.0 Td (Charts) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 182.0 Td (Plotly) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 182.0 Td (Dashboard and) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 176 m 541 176 l S
+1.000 1.000 1.000 rg 54 156 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 162.0 Td (Testing) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 221.3 162.0 Td (Pytest) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 383.7 162.0 Td (23 automated tests) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 156 m 541 156 l S
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 146.0 Td (The active scikit-learn version is pinned exactly in `requirements.txt` to keep training) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 133.0 Td (and inference compatible.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 109.0 Td (3. Application architecture) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 89.0 Td (`app.py` handles Streamlit layout, authentication, navigation, forms, charts, and service) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 76.0 Td (calls. `config/` holds paths and business settings. `database/` holds SQLAlchemy setup,) Tj ET
 endstream
 endobj
 11 0 obj
 << /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 10 0 R >>
 endobj
 12 0 obj
-<< /Length 6562 >>
+<< /Length 6641 >>
 stream
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 782.0 Td (3. Application architecture) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (- `app.py`: Streamlit layout, navigation, forms, charts, empty states, and service calls. -) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 749.0 Td (`config/settings.py`: project paths, database URL, business configuration, and model) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 736.0 Td (version. - `database/db.py`: SQLAlchemy engine, session factory, initialization, and) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 723.0 Td (isolated test sessions. - `database/models.py`: relational schema and constraints. -) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 710.0 Td (`database/seed.py`: clearly synthetic demo property and tenants. - `src/data/`: synthetic) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 697.0 Td (generation and dataset validation. - `src/ml/`: training, evaluation, prediction, and) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 684.0 Td (explanation. - `src/services/`: tenant, rent, payment, notification, risk, and) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 671.0 Td (recommendation workflows. - `tests/`: dataset, date, CRUD, payment, notification, risk, and) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 658.0 Td (recommendation tests.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 634.0 Td (4. Database schema and relationships) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 614.0 Td (The schema contains six principal tables:) Tj ET
-0.090 0.320 0.380 rg 54 576 487 20 re f
-1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 582.0 Td (Table) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 582.0 Td (Purpose) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 576 m 541 576 l S
-1.000 1.000 1.000 rg 54 556 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 562.0 Td (`properties`) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 562.0 Td (Property metadata and) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 556 m 541 556 l S
-0.970 0.980 0.990 rg 54 536 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 542.0 Td (`tenants`) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 542.0 Td (Synthetic tenant) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 536 m 541 536 l S
-1.000 1.000 1.000 rg 54 516 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 522.0 Td (`rent_records`) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 522.0 Td (One monthly rent) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 516 m 541 516 l S
-0.970 0.980 0.990 rg 54 496 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 502.0 Td (`payments`) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 502.0 Td (Recorded payment and) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 496 m 541 496 l S
-1.000 1.000 1.000 rg 54 476 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 482.0 Td (`notification_logs`) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 482.0 Td (Simulated reminder and) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 476 m 541 476 l S
-0.970 0.980 0.990 rg 54 456 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 462.0 Td (`prediction_logs`) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 462.0 Td (Optional persisted) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 456 m 541 456 l S
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 446.0 Td (Relationships are enforced with foreign keys. `rent_records` has a unique `\(tenant_id,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 433.0 Td (rent_month\)` constraint. Payment transaction references are unique. Notification logs have) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 420.0 Td (a unique `\(tenant_id, rent_record_id, notification_type\)` constraint, which supports) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 407.0 Td (idempotency.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 383.0 Td (5. Synthetic dataset generation) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 363.0 Td (`src/data/generate_dataset.py` uses random seed 42 and generates 200 synthetic tenants with) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 350.0 Td (28 cycles each, producing 5,600 rows. Tenant behavior profiles represent generally on-time,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 337.0 Td (occasional-late, and frequently-late patterns with variation in rent, method, and delay.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 319.0 Td (All names, contacts, identifiers, and outcomes are synthetic. The records are not Cynbit) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 306.0 Td (customer data. A regression fix ensures small datasets generated inside tests do not) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 293.0 Td (overwrite the canonical 5,600-row CSV artifacts.) Tj ET
-0.090 0.320 0.380 rg 54 255 487 20 re f
-1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 261.0 Td (Validation check) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 261.0 Td (Result) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 255 m 541 255 l S
-1.000 1.000 1.000 rg 54 235 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 241.0 Td (Rows) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 241.0 Td (5,600) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 235 m 541 235 l S
-0.970 0.980 0.990 rg 54 215 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 221.0 Td (Tenants) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 221.0 Td (200) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 215 m 541 215 l S
-1.000 1.000 1.000 rg 54 195 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 201.0 Td (Cycles per tenant) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 201.0 Td (28) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 195 m 541 195 l S
-0.970 0.980 0.990 rg 54 175 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 181.0 Td (Missing values) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 181.0 Td (0) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 175 m 541 175 l S
-1.000 1.000 1.000 rg 54 155 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 161.0 Td (Duplicate tenant-cycle) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 161.0 Td (0) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 155 m 541 155 l S
-0.970 0.980 0.990 rg 54 135 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 141.0 Td (Target classes) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 141.0 Td (Both present) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 135 m 541 135 l S
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 119.0 Td (6. Feature engineering and target definition) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 99.0 Td (Features include `monthly_rent`, `tenancy_months`, `payment_method`,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 86.0 Td (`previous_late_payments`, `average_delay_days`, `last_payment_delay`,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 73.0 Td (`on_time_payment_rate`, `previous_payment_count`, and `days_until_due`.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 788.0 Td (models, migration compatibility, and synthetic seeding. `src/data/` generates/validates) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 775.0 Td (data, `src/ml/` trains/evaluates/loads/explains the model, and `src/services/` contains) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (authentication, tenant, rent, payment, financial, notification, risk, and recommendation) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 749.0 Td (workflows.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 725.0 Td (4. Database schema and relationships) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 705.0 Td (The schema contains seven principal tables:) Tj ET
+0.090 0.320 0.380 rg 54 667 487 20 re f
+1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 673.0 Td (Table) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 673.0 Td (Purpose) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 667 m 541 667 l S
+1.000 1.000 1.000 rg 54 647 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 653.0 Td (`owners`) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 653.0 Td (Owner identity, unique) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 647 m 541 647 l S
+0.970 0.980 0.990 rg 54 627 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 633.0 Td (`properties`) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 633.0 Td (Property metadata,) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 627 m 541 627 l S
+1.000 1.000 1.000 rg 54 607 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 613.0 Td (`tenants`) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 613.0 Td (Synthetic tenant) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 607 m 541 607 l S
+0.970 0.980 0.990 rg 54 587 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 593.0 Td (`rent_records`) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 593.0 Td (One monthly rent) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 587 m 541 587 l S
+1.000 1.000 1.000 rg 54 567 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 573.0 Td (`payments`) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 573.0 Td (Recorded payment) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 567 m 541 567 l S
+0.970 0.980 0.990 rg 54 547 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 553.0 Td (`notification_logs`) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 553.0 Td (Simulated reminder and) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 547 m 541 547 l S
+1.000 1.000 1.000 rg 54 527 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 533.0 Td (`prediction_logs`) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 533.0 Td (Optional persisted) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 527 m 541 527 l S
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 517.0 Td (Properties belong to owners; tenants belong to properties; rent records belong to tenants;) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 504.0 Td (payments belong to rent records; notifications reference tenants/rent records; predictions) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 491.0 Td (reference tenants/rent records. `rent_records` has a unique `\(tenant_id, rent_month\)`) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 478.0 Td (constraint. Payment transaction references are unique. Notification logs have a unique) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 465.0 Td (`\(tenant_id, rent_record_id, notification_type\)` constraint.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 441.0 Td (5. Owner authentication and isolation) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 421.0 Td (Registration validates a unique email and stores only an Argon2 password hash. Login) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 408.0 Td (verifies the supplied password with `argon2.PasswordHasher`; logout clears the) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 395.0 Td (authenticated owner session. Protected dashboard sections require an authenticated owner.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 377.0 Td (Properties carry `owner_id`. Tenant, rent, payment, notification, financial, and risk) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 364.0 Td (queries derive ownership through the property relationship rather than trusting an owner ID) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 351.0 Td (supplied by a form. This prevents normal service paths from reading or mutating another) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 338.0 Td (ownerâ??s records. Production deployment would still require hardened session, secret,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 325.0 Td (transport, audit, recovery, and role-management controls.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 301.0 Td (6. Synthetic dataset generation) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 281.0 Td (`src/data/generate_dataset.py` uses random seed 42 and generates 200 synthetic tenants with) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 268.0 Td (28 cycles each, producing 5,600 rows. Profiles represent generally on-time,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 255.0 Td (occasional-late, and frequently-late behavior with rent, method, and delay variation. All) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 242.0 Td (names, contacts, identifiers, and outcomes are synthetic and not Cynbit customer data.) Tj ET
+0.090 0.320 0.380 rg 54 204 487 20 re f
+1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 210.0 Td (Validation check) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 210.0 Td (Result) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 204 m 541 204 l S
+1.000 1.000 1.000 rg 54 184 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 190.0 Td (Rows) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 190.0 Td (5,600) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 184 m 541 184 l S
+0.970 0.980 0.990 rg 54 164 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 170.0 Td (Tenants) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 170.0 Td (200) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 164 m 541 164 l S
+1.000 1.000 1.000 rg 54 144 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 150.0 Td (Cycles per tenant) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 150.0 Td (28) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 144 m 541 144 l S
+0.970 0.980 0.990 rg 54 124 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 130.0 Td (Missing values) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 130.0 Td (0) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 124 m 541 124 l S
+1.000 1.000 1.000 rg 54 104 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 110.0 Td (Duplicate tenant-cycle) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 110.0 Td (0) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 104 m 541 104 l S
+0.970 0.980 0.990 rg 54 84 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 90.0 Td (Target classes) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 90.0 Td (Both present) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 84 m 541 84 l S
 endstream
 endobj
 13 0 obj
 << /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 12 0 R >>
 endobj
 14 0 obj
-<< /Length 6083 >>
+<< /Length 7201 >>
 stream
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 788.0 Td (The target `late_payment` is 1 when the eventual payment date is after the due date and 0) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 775.0 Td (when it is on or before the due date. Historical features use prior cycles only. The) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (current payment date and current delay are not features.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 738.0 Td (7. Leakage prevention) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 718.0 Td (Every generated row declares `days_until_due=7`, representing the information boundary used) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 705.0 Td (for prediction. The training split is tenant- and time-isolated:) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 687.0 Td (- Training: tenants 1-160, cycles 1-22, 3,520 rows. - Test: tenants 161-200, cycles 23-28,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 674.0 Td (240 rows.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 656.0 Td (There is no tenant overlap, and the earliest test due date is later than the latest) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 643.0 Td (training due date. This is more conservative than randomly splitting repeated tenant) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 630.0 Td (histories. Measured performance is not a production guarantee.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 606.0 Td (8. Training and evaluation methodology) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 586.0 Td (Numeric features use median imputation and standardization for Logistic Regression.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 573.0 Td (Categorical payment method uses most-frequent imputation and one-hot encoding. Both) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 560.0 Td (estimators use reproducible random state 42 and class balancing.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 542.0 Td (Metrics include accuracy, precision, recall, F1, ROC-AUC, PR-AUC, Brier score, and) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 529.0 Td (confusion matrix. A majority-class baseline is included for context. Model selection) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 516.0 Td (prioritizes F1 and then PR-AUC rather than accuracy alone.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 492.0 Td (9. Logistic Regression baseline) Tj ET
-0.090 0.320 0.380 rg 54 452 487 20 re f
-1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 458.0 Td (Metric) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 458.0 Td (Result) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 452 m 541 452 l S
-1.000 1.000 1.000 rg 54 432 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 438.0 Td (Accuracy) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 438.0 Td (0.6792) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 432 m 541 432 l S
-0.970 0.980 0.990 rg 54 412 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 418.0 Td (Precision) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 418.0 Td (0.5692) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 412 m 541 412 l S
-1.000 1.000 1.000 rg 54 392 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 398.0 Td (Recall) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 398.0 Td (0.7789) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 392 m 541 392 l S
-0.970 0.980 0.990 rg 54 372 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 378.0 Td (F1) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 378.0 Td (0.6578) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 372 m 541 372 l S
-1.000 1.000 1.000 rg 54 352 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 358.0 Td (ROC-AUC) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 358.0 Td (0.7830) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 352 m 541 352 l S
-0.970 0.980 0.990 rg 54 332 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 338.0 Td (PR-AUC) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 338.0 Td (0.6792) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 332 m 541 332 l S
-1.000 1.000 1.000 rg 54 312 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 318.0 Td (Brier score) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 318.0 Td (0.2062) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 312 m 541 312 l S
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 296.0 Td (10. Random Forest model) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 276.0 Td (The comparison model uses 180 estimators, maximum depth 8, minimum leaf size 3, class) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 263.0 Td (balancing, and random state 42.) Tj ET
-0.090 0.320 0.380 rg 54 225 487 20 re f
-1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 231.0 Td (Metric) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 231.0 Td (Result) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 225 m 541 225 l S
-1.000 1.000 1.000 rg 54 205 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 211.0 Td (Accuracy) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 211.0 Td (0.7083) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 205 m 541 205 l S
-0.970 0.980 0.990 rg 54 185 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 191.0 Td (Precision) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 191.0 Td (0.6016) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 185 m 541 185 l S
-1.000 1.000 1.000 rg 54 165 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 171.0 Td (Recall) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 171.0 Td (0.7789) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 165 m 541 165 l S
-0.970 0.980 0.990 rg 54 145 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 151.0 Td (F1) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 151.0 Td (0.6789) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 145 m 541 145 l S
-1.000 1.000 1.000 rg 54 125 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 131.0 Td (ROC-AUC) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 131.0 Td (0.7787) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 125 m 541 125 l S
-0.970 0.980 0.990 rg 54 105 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 111.0 Td (PR-AUC) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 111.0 Td (0.6747) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 105 m 541 105 l S
-1.000 1.000 1.000 rg 54 85 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 91.0 Td (Brier score) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 91.0 Td (0.2044) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 85 m 541 85 l S
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 782.0 Td (7. Feature engineering and target definition) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (Features include `monthly_rent`, `tenancy_months`, `payment_method`,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 749.0 Td (`previous_late_payments`, `average_delay_days`, `last_payment_delay`,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 736.0 Td (`on_time_payment_rate`, `previous_payment_count`, and `days_until_due`. The target) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 723.0 Td (`late_payment` is 1 when eventual payment is after due date and 0 when on or before it.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 710.0 Td (Current payment date, delay, and outcome are excluded from features.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 686.0 Td (8. Leakage prevention) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 666.0 Td (Rows use a seven-day pre-due information boundary. Training uses tenants 1-160 and cycles) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 653.0 Td (1-22 \(3,520 rows\); testing uses tenants 161-200 and cycles 23-28 \(240 rows\). There is no) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 640.0 Td (tenant overlap, and test due dates are later than training due dates. This conservative) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 627.0 Td (synthetic evaluation is not a production guarantee.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 603.0 Td (9. Training and evaluation methodology) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 583.0 Td (Numeric features use median imputation and standardization for Logistic Regression. Payment) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 570.0 Td (method uses most-frequent imputation and one-hot encoding. Both estimators use random state) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 557.0 Td (42 and class balancing. Metrics include accuracy, precision, recall, F1, ROC-AUC, PR-AUC,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 544.0 Td (Brier score, and confusion matrix. Selection prioritizes F1 and then PR-AUC rather than) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 531.0 Td (accuracy alone.) Tj ET
+0.090 0.320 0.380 rg 54 493 487 20 re f
+1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 499.0 Td (Model) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 119.9 499.0 Td (Accuracy) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 180.8 499.0 Td (Precision) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 241.6 499.0 Td (Recall) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 499.0 Td (F1) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 363.4 499.0 Td (ROC-AUC) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 424.2 499.0 Td (PR-AUC) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 485.1 499.0 Td (Brier) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 493 m 541 493 l S
+1.000 1.000 1.000 rg 54 473 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 479.0 Td (Logistic Regression) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 119.9 479.0 Td (0.6792) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 180.8 479.0 Td (0.5692) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 241.6 479.0 Td (0.7789) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 479.0 Td (0.6578) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 363.4 479.0 Td (0.7830) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 424.2 479.0 Td (0.6792) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 485.1 479.0 Td (0.2062) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 473 m 541 473 l S
+0.970 0.980 0.990 rg 54 453 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 459.0 Td (Random Forest) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 119.9 459.0 Td (0.7083) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 180.8 459.0 Td (0.6016) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 241.6 459.0 Td (0.7789) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 459.0 Td (0.6789) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 363.4 459.0 Td (0.7787) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 424.2 459.0 Td (0.6747) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 485.1 459.0 Td (0.2044) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 453 m 541 453 l S
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 443.0 Td (Random Forest was selected because it achieved the higher F1 and slightly better Brier) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 430.0 Td (score. Logistic Regression had marginally higher ROC-AUC and PR-AUC. The majority baseline) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 417.0 Td (had accuracy 0.6042, F1 0.0000, ROC-AUC 0.5000, PR-AUC 0.3958, and Brier score 0.2399.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 393.0 Td (10. Model comparison) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 373.0 Td (The selected Random Forest uses 180 estimators, maximum depth 8, minimum leaf size 3, class) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 360.0 Td (balancing, and random state 42. Both models use the same feature schema and preprocessing.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 347.0 Td (The saved artifact is trained with the pinned scikit-learn version.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 323.0 Td (11. Risk thresholds and explainability) Tj ET
+0.090 0.320 0.380 rg 54 283 487 20 re f
+1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 289.0 Td (Risk) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 289.0 Td (Threshold) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 283 m 541 283 l S
+1.000 1.000 1.000 rg 54 263 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 269.0 Td (Low) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 269.0 Td (`< 0.30`) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 263 m 541 263 l S
+0.970 0.980 0.990 rg 54 243 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 249.0 Td (Medium) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 249.0 Td (`0.30 to < 0.65`) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 243 m 541 243 l S
+1.000 1.000 1.000 rg 54 223 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 229.0 Td (High) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 229.0 Td (`>= 0.65`) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 223 m 541 223 l S
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 213.0 Td (Thresholds are configurable prototype decisions and require calibration, policy review, and) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 200.0 Td (monitoring. Explanations reference historical late count, average delay, and on-time rate.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 187.0 Td (They state association, not causation; risk is distinct from actual overdue status.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 163.0 Td (12. Rent lifecycle and financial accounting) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 143.0 Td (`generate_rent_records` creates one obligation per active tenant and month and is) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 130.0 Td (idempotent. `financial_service.py` is the shared calculation layer used by dashboard,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 117.0 Td (analytics, rent views, and notification status checks.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 99.0 Td (For each obligation, `verified_total` sums only payments with `verification_status ==) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 86.0 Td (VERIFIED`. Pending and rejected transactions are excluded. Outstanding balance is rent less) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 73.0 Td (verified receipts, floored at zero, with excess retained as an overpayment flag. Zero) Tj ET
 endstream
 endobj
 15 0 obj
 << /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 14 0 R >>
 endobj
 16 0 obj
-<< /Length 5246 >>
+<< /Length 6072 >>
 stream
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 782.0 Td (11. Model comparison) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (Random Forest was selected because it achieved the higher F1 score and slightly better) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 749.0 Td (Brier score. Logistic Regression had marginally higher ROC-AUC and PR-AUC. The majority) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 736.0 Td (baseline had accuracy 0.6042, F1 0.0000, ROC-AUC 0.5000, PR-AUC 0.3958, and Brier score) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 723.0 Td (0.2399.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 705.0 Td (The differences are useful for this prototype, but neither model has been calibrated or) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 692.0 Td (validated on representative real-world data.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 668.0 Td (12. Risk thresholds) Tj ET
-0.090 0.320 0.380 rg 54 628 487 20 re f
-1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 634.0 Td (Risk) Tj ET
-1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 634.0 Td (Threshold) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 628 m 541 628 l S
-1.000 1.000 1.000 rg 54 608 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 614.0 Td (Low) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 614.0 Td (`< 0.30`) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 608 m 541 608 l S
-0.970 0.980 0.990 rg 54 588 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 594.0 Td (Medium) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 594.0 Td (`0.30 to < 0.65`) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 588 m 541 588 l S
-1.000 1.000 1.000 rg 54 568 487 20 re f
-0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 574.0 Td (High) Tj ET
-0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 574.0 Td (`>= 0.65`) Tj ET
-0.820 0.870 0.900 RG 0.6 w 54 568 m 541 568 l S
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 558.0 Td (These thresholds are configurable prototype decisions. They require calibration, policy) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 545.0 Td (review, and monitoring before operational use.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 521.0 Td (13. Model explainability) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 501.0 Td (Prediction explanations reference historical late count, average delay, and on-time rate.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 488.0 Td (The wording states that the indicators are associative and not causal. The dashboard) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 475.0 Td (presents explanations and recommendations alongside probability and actual rent status.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 451.0 Td (14. Rent lifecycle implementation) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 431.0 Td (`generate_rent_records` creates one obligation per active tenant and month and is) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 418.0 Td (idempotent. `refresh_statuses` applies this state machine:) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 400.0 Td (- Before due date: `UPCOMING`. - Due date through the next three calendar days: `PENDING`.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 387.0 Td (- Starting on the fourth day after due date, which is the default fifth for a) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 374.0 Td (first-of-month due date: `OVERDUE`. - Verified payment at any point: `PAID`.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 356.0 Td (The implementation handles month lengths through `safe_due_date`, including February and) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 343.0 Td (leap years. Demo-date changes only recalculate status; they do not rewrite payment) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 330.0 Td (timestamps.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 306.0 Td (15. Notification simulation) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 286.0 Td (`run_notification_simulation` creates advance reminders and overdue alerts with a database) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 273.0 Td (uniqueness constraint and existence check. It stores messages and simulated delivery) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 260.0 Td (metadata but never sends external communications.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 236.0 Td (16. Payment verification) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 216.0 Td (`record_payment` writes a pending payment. `verify_payment` changes the payment to) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 203.0 Td (`VERIFIED`, marks the associated rent record `PAID`, and preserves notification history. A) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 190.0 Td (notification alone never marks rent paid.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 166.0 Td (17. Recommendation engine) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 146.0 Td (Recommendations are deterministic templates based on predicted category, historical late) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 133.0 Td (count, average delay, and current rent status. They are owner-facing decision support. The) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 120.0 Td (system does not send recommendations automatically to tenants.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 96.0 Td (18. Streamlit dashboard) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 76.0 Td (The dashboard includes:) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 788.0 Td (receipt is `PENDING` or `OVERDUE` by date; a positive receipt below rent is) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 775.0 Td (`PARTIALLY_PAID`; equal or greater verified total is `PAID`. Unpaid rent is pending through) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (the three grace days and overdue from the fifth for the default first-of-month schedule.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 744.0 Td (The same service calculates expected rent, verified collected rent, pending balance,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 731.0 Td (overdue balance, partial balance, total outstanding, and collection rate. Collection rate) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 718.0 Td (is verified collected amount divided by expected rent, never the full face value of) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 705.0 Td (obligations marked paid. Simulated dates do not rewrite historical timestamps.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 681.0 Td (13. Notification simulation) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 661.0 Td (`run_notification_simulation` creates advance reminders and overdue alerts with a database) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 648.0 Td (uniqueness constraint and existence check. It never sends external communications. Alerts) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 635.0 Td (include outstanding overdue balances, including partially paid obligations, and are) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 622.0 Td (idempotent.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 598.0 Td (14. Payment verification) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 578.0 Td (`record_payment` writes a pending transaction after owner-scope validation.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 565.0 Td (`verify_payment` changes that transaction to `VERIFIED`, then recalculates the obligation) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 552.0 Td (from all verified transactions. A partial verified transaction therefore produces) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 539.0 Td (`PARTIALLY_PAID`; it does not mark the entire obligation `PAID`. Only a fully covered) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 526.0 Td (obligation becomes `PAID`. History and transaction references are preserved.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 502.0 Td (15. Recommendation engine) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 482.0 Td (Recommendations are deterministic templates based on predicted category, historical late) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 469.0 Td (count, average delay, and current rent status. They are owner-facing decision support and) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 456.0 Td (are not sent automatically to tenants.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 432.0 Td (16. Streamlit dashboard) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 412.0 Td (The six sections are Dashboard, Tenants, Rent & Payments, Notifications, AI Risk) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 399.0 Td (Intelligence, and Analytics. They provide owner-scoped KPIs, verified collection trends,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 386.0 Td (status distributions, transaction activity, CRUD forms, payment verification, notification) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 373.0 Td (simulation, gated risk predictions, explanations, recommendations, and evaluation views.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 360.0 Td (Financial figures use the centralized financial service, and predicted risk is shown) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 347.0 Td (separately from actual overdue status.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 323.0 Td (17. Testing strategy) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 303.0 Td (The final suite contains 23 passing tests covering dataset reproducibility/validation,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 290.0 Td (canonical-artifact preservation, date boundaries, tenant/property CRUD, owner) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 277.0 Td (registration/login/logout/isolation, rent generation, no/partial/full/over payments,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 264.0 Td (pending/rejected exclusion, financial aggregation and duplicate-join prevention,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 251.0 Td (grace-period and overdue behavior, reminder idempotency, risk thresholds, saved-model) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 238.0 Td (prediction, and recommendations.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 220.0 Td (The financial regression scenario with two INR 20,000 obligations and INR 15,000 verified) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 207.0 Td (receipts per obligation reconciles to expected INR 40,000, collected INR 30,000,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 194.0 Td (outstanding INR 10,000, and 75% collection. Database tests use isolated SQLite sessions.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 176.0 Td (`prediction_logs` supports persisted prediction records, but the current dashboardâ??s) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 163.0 Td (display-time risk scoring is not a complete audit log of every rendered prediction. This is) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 150.0 Td (a known limitation.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 126.0 Td (18. Limitations and future improvements) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 106.0 Td (The model is synthetic-data trained and not production-calibrated. Notifications are) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 93.0 Td (simulated, payment-provider integration and real email/SMS/WhatsApp delivery are absent,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 80.0 Td (and local authentication needs production hardening. Future work includes representative) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 67.0 Td (consented data, temporal backtesting, calibration, threshold governance, fairness analysis,) Tj ET
 endstream
 endobj
 17 0 obj
 << /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 16 0 R >>
 endobj
 18 0 obj
-<< /Length 3424 >>
+<< /Length 254 >>
 stream
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 788.0 Td (1. Dashboard overview with database-derived KPIs, collection trend, status distribution,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 775.0 Td (recent payments, overdue queue, and high-risk summary. 2. Tenant management with search,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (add/edit forms, property/unit details, and rent history. 3. Rent & Payments with status) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 749.0 Td (tabs, generation, recording, and verification. 4. Notification Center with simulation,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 736.0 Td (filters, messages, and delivery status. 5. AI Risk Intelligence with actual-history gating,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 723.0 Td (probabilities, explanations, and recommendations. 6. Analytics with collection, payment) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 710.0 Td (delay, risk, and evaluation views.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 692.0 Td (All six pages executed with zero exceptions through Streamlit's testing API. A live server) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 679.0 Td (returned HTTP 200 during acceptance testing.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 655.0 Td (19. Testing strategy) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 635.0 Td (The final suite contains 12 passing tests covering dataset reproducibility and validation,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 622.0 Td (canonical-artifact preservation, date boundaries, tenant/property CRUD, rent generation,) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 609.0 Td (payment verification, grace-period and overdue detection, reminder scheduling and duplicate) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 596.0 Td (prevention, risk thresholds, saved-model prediction, and recommendation generation.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 578.0 Td (An isolated SQLite session is used for database tests. A separate controlled workflow) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 565.0 Td (verified five-tenant generation, reminders, pending/grace/overdue transitions, payment) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 552.0 Td (verification, notification preservation, and duplicate prevention.) Tj ET
-0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 528.0 Td (20. Limitations and future improvements) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 508.0 Td (The model is trained on synthetic data, the current demo database has no verified payment) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 495.0 Td (history, notifications are simulated, and no production authentication, payment-provider) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 482.0 Td (integration, message delivery, calibration, fairness audit, drift monitoring, or deployment) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 469.0 Td (infrastructure is included.) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 451.0 Td (Recommended next steps are representative data collection with consent, temporal) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 438.0 Td (backtesting, probability calibration, threshold governance, fairness analysis, model) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 425.0 Td (monitoring, provider reconciliation, role-based access, audit export, and human approval) Tj ET
-0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 412.0 Td (workflows for communications.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 788.0 Td (monitoring, provider reconciliation, stronger role-based access, audit export,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 775.0 Td (prediction-log policy, and human approval for communications.) Tj ET
 endstream
 endobj
 19 0 obj
@@ -462,21 +430,21 @@ xref
 0000000238 00000 n 
 0000000676 00000 n 
 0000000812 00000 n 
-0000002831 00000 n 
-0000002967 00000 n 
-0000004133 00000 n 
-0000004269 00000 n 
-0000010716 00000 n 
-0000010854 00000 n 
-0000017469 00000 n 
-0000017607 00000 n 
-0000023743 00000 n 
-0000023881 00000 n 
-0000029180 00000 n 
-0000029318 00000 n 
-0000032795 00000 n 
+0000002635 00000 n 
+0000002771 00000 n 
+0000003937 00000 n 
+0000004073 00000 n 
+0000010901 00000 n 
+0000011039 00000 n 
+0000017733 00000 n 
+0000017871 00000 n 
+0000025125 00000 n 
+0000025263 00000 n 
+0000031388 00000 n 
+0000031526 00000 n 
+0000031832 00000 n 
 trailer
 << /Size 20 /Root 1 0 R >>
 startxref
-32933
+31970
 %%EOF
