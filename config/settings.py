@@ -15,5 +15,7 @@ REMINDER_OFFSET_DAYS = 5  # Business convention: Dec 1 reminder is Nov 26.
 GRACE_PERIOD_DAYS = 3
 OVERDUE_DAY = 5
 MODEL_VERSION = "1.0.0"
+APPLICATION_TIMEZONE = os.getenv("TENANTEASE_TIMEZONE", "Asia/Kolkata")
+NOTIFICATION_POLL_SECONDS = 15
 for _p in (DATA_RAW_DIR, DATA_PROCESSED_DIR, MODEL_DIR, REPORT_DIR, LOG_DIR):
     _p.mkdir(parents=True, exist_ok=True)

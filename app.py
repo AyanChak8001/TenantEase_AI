@@ -11,13 +11,16 @@ from database.models import NotificationLog, Owner, Payment, Property, RentRecor
 from database.seed import seed_demo
 from src.data.generate_dataset import FEATURES
 from src.ml.predict import predict
-from src.services.notification_service import run_notification_simulation
+from src.services.notification_service import NOTIFICATION_TYPES, ensure_scheduled_business_notifications, process_due_notifications, retry_failed_notification
 from src.services.payment_service import record_payment, verify_payment
 from src.services.recommendation_service import recommendation
 from src.services.rent_service import generate_rent_records, refresh_statuses
 from src.services.tenant_service import create_property, create_tenant, list_owned_properties, list_tenants, update_tenant
 from src.services.auth_service import authenticate_owner, register_owner
 from src.services.financial_service import owned_rents, portfolio_totals, rent_financials
+from src.services.workspace_service import delete_tenant, reset_owner_workspace
+from src.services.scheduler_service import start_scheduler
+from src.utils.clock import ApplicationClock
 
 st.set_page_config(page_title="TenantEase AI", page_icon="🏠", layout="wide", initial_sidebar_state="expanded")
 
@@ -126,6 +129,30 @@ def logout_owner():
 def is_authenticated():
     return bool(st.session_state.get("owner_id"))
 
+@st.dialog("Reset My Workspace")
+def reset_workspace_dialog(s, owner_id):
+    st.warning("This permanently deletes all properties, tenants, rent records, payments, notification logs and prediction logs belonging to your current owner account. Your owner account, password and login access will be preserved. Other owners are not affected.")
+    confirmed=st.checkbox("I understand that my workspace data will be permanently deleted.",key="confirm_workspace_reset")
+    if st.button("Permanently reset workspace",type="primary",disabled=not confirmed,use_container_width=True):
+        try:
+            counts=reset_owner_workspace(s,owner_id)
+            st.session_state.workspace_action_message=f"Workspace reset complete: {counts['properties']} properties, {counts['tenants']} tenants and {counts['rent_records']} rent records removed. Your owner account was preserved."
+            st.rerun()
+        except Exception as error:
+            st.error(f"Workspace reset failed and was rolled back: {error}")
+
+@st.dialog("Delete Tenant")
+def delete_tenant_dialog(s, tenant_id, owner_id, tenant_label):
+    st.warning(f"This permanently deletes {tenant_label} and its rent records, payments, notification logs and prediction logs. The property will be preserved.")
+    confirmed=st.checkbox("I understand that this tenant's records will be permanently deleted.",key=f"confirm_tenant_delete_{tenant_id}")
+    if st.button("Permanently delete tenant",type="primary",disabled=not confirmed,use_container_width=True):
+        try:
+            delete_tenant(s,tenant_id,owner_id)
+            st.session_state.workspace_action_message=f"Tenant {tenant_label} and its dependent records were deleted. The property was preserved."
+            st.rerun()
+        except Exception as error:
+            st.error(f"Tenant deletion failed and was rolled back: {error}")
+
 def sidebar(s,demo,owner):
     st.sidebar.markdown('<div class="brand"><span class="brand-mark">T</span><span class="brand-name">TenantEase</span><div class="brand-copy">AI-powered rent collection and payment intelligence for modern property teams.</div></div>',unsafe_allow_html=True)
     st.sidebar.markdown(f"<div style='color:#dff7f3;margin:8px 0 12px'>Signed in as <strong>{owner.full_name}</strong></div>",unsafe_allow_html=True)
@@ -133,9 +160,11 @@ def sidebar(s,demo,owner):
     selected=st.sidebar.date_input("Simulated current date",value=demo,key="demo_date_picker")
     st.sidebar.markdown("### Workspace"); page=st.sidebar.radio("Navigation",["Dashboard","Tenants","Rent & Payments","Notifications","AI Risk Intelligence","Analytics"],label_visibility="collapsed")
     st.sidebar.markdown("### Demo controls")
+    if message:=st.session_state.pop("workspace_action_message",None): st.sidebar.success(message)
     if st.sidebar.button("Log out",use_container_width=True):
         logout_owner(); st.rerun()
     if st.sidebar.button("Initialize demo data",use_container_width=True): seed_demo(); st.sidebar.success("Synthetic demo tenants are ready.")
+    if st.sidebar.button("Reset My Workspace",use_container_width=True): reset_workspace_dialog(s,owner.id)
     if st.sidebar.button("Generate selected month rent",use_container_width=True):
         created=generate_rent_records(s,selected,owner.id); refresh_statuses(s,selected,owner.id); st.sidebar.success(f"{len(created)} new rent record(s); duplicates skipped."); st.rerun()
     with st.sidebar.expander("Demo workflow"): st.markdown("**Nov 25** upcoming · **Nov 26** reminder · **Dec 1** due · **Dec 3** grace · **Dec 5** overdue")
@@ -207,6 +236,8 @@ def tenants_page(s,owner_id,demo):
             st.markdown("#### Payment history"); rs=s.query(RentRecord).filter_by(tenant_id=selected.id).order_by(RentRecord.due_date.desc()).all()
             if rs: st.dataframe(pd.DataFrame(rent_rows(s,rs,demo)),hide_index=True,use_container_width=True)
             else: show_empty("No rent history","Generate a monthly rent cycle to begin tracking this tenant.")
+        if st.button("Delete tenant",key=f"delete_tenant_{selected.id}",type="secondary"):
+            delete_tenant_dialog(s,selected.id,owner_id,selected.tenant_name)
 
 def rent_page(s,demo,owner_id):
     header("Collections","Rent & payments","Generate obligations, monitor the collection queue and verify received payments.")
@@ -230,19 +261,32 @@ def rent_page(s,demo,owner_id):
         st.markdown("#### Verification queue")
         for payment in pending:
             rent=s.get(RentRecord,payment.rent_record_id)
-            if st.button(f"Verify {tenant_name(s,rent.tenant_id)} · {money(payment.amount)} · {payment.transaction_reference}",key=f"verify_{payment.id}"): verify_payment(s,payment.id,owner_id); st.success("Payment verified; rent marked PAID."); st.rerun()
+            if st.button(f"Verify {tenant_name(s,rent.tenant_id)} · {money(payment.amount)} · {payment.transaction_reference}",key=f"verify_{payment.id}"): verify_payment(s,payment.id,owner_id,as_of=demo,now=ApplicationClock.simulated(demo).now()); st.success("Payment verified; rent status and outstanding balance recalculated."); st.rerun()
+
+@st.fragment(run_every=15)
+def _render_notification_queue(owner_id, status_filter, type_filter, as_of):
+    session=get_session()
+    try:
+        logs=owned_notifications(session,owner_id)
+        if status_filter: logs=[n for n in logs if n.delivery_status==status_filter]
+        if type_filter: logs=[n for n in logs if n.notification_type==type_filter]
+        if not logs:
+            show_empty("No notifications in this queue","Verified payments and eligible rent cycles create scheduled events automatically. The worker checks every 15 seconds.")
+            return
+        rows=[]
+        for n in logs:
+            rent=session.get(RentRecord,n.rent_record_id); summary=rent_financials(session,rent,as_of) if rent else None
+            rows.append({"Tenant":tenant_name(session,n.tenant_id),"Rent month":rent.rent_month if rent else "—","Type":n.notification_type,"Message":n.message,"Created at":n.created_at,"Scheduled delivery":n.scheduled_at,"Actual delivery":n.sent_at or "—","Delivery status":n.delivery_status,"Outstanding amount":money(summary.outstanding) if summary else "—"})
+        st.dataframe(pd.DataFrame(rows),hide_index=True,use_container_width=True)
+    finally:
+        session.close()
 
 def notifications_page(s,demo,owner_id):
-    header("Communications","Notification center","Simulate owner-approved reminders and keep an auditable delivery history."); before=len(owned_notifications(s,owner_id))
-    if st.button("Run notification simulation",type="primary"):
-        created=run_notification_simulation(s,demo,owner_id)
-        if created: st.success(f"{len(created)} notification(s) simulated.")
-        else: st.info("No new notifications were required. Duplicate alerts were prevented.")
-    logs=owned_notifications(s,owner_id)
-    if not logs: show_empty("No notification activity yet","Run the simulation on November 26 or after an unpaid obligation reaches its overdue date."); return
-    filters=st.multiselect("Filter notification types",["ADVANCE_REMINDER","PAYMENT_DUE","OVERDUE_ALERT"])
-    if filters: logs=[n for n in logs if n.notification_type in filters]
-    st.dataframe(pd.DataFrame([{"Tenant":tenant_name(s,n.tenant_id),"Type":n.notification_type,"Message":n.message,"Scheduled":n.scheduled_at,"Simulated sent":n.sent_at,"Delivery":n.delivery_status} for n in logs]),hide_index=True,use_container_width=True)
+    header("Communications","Notification center","Events are created by payment and rent lifecycle changes and delivered by the background worker.")
+    st.caption("Delivery is simulated locally. No email, SMS or WhatsApp message is sent.")
+    status_filter=st.selectbox("Delivery status",["All","SCHEDULED","SENT_SIMULATED","FAILED","CANCELLED"])
+    type_filter=st.selectbox("Notification type",["All"]+NOTIFICATION_TYPES)
+    _render_notification_queue(owner_id,None if status_filter=="All" else status_filter,None if type_filter=="All" else type_filter,demo)
 
 def risk_page(s,owner_id):
     header("Decision support","AI risk intelligence","Prioritize respectful follow-up using historical signals—not confirmed defaults.")
@@ -276,7 +320,7 @@ def analytics_page(s,owner_id,demo):
         st.json(json.loads(report.read_text(encoding="utf-8")))
 
 def main():
-    inject_styles(); init_db(); seed_demo(); s=get_session()
+    inject_styles(); init_db(); seed_demo(); start_scheduler(); s=get_session()
     try:
         if not is_authenticated():
             auth_screen(s)
@@ -286,6 +330,9 @@ def main():
             st.session_state.pop("owner_id",None); st.session_state.pop("owner_name",None); st.rerun()
         if "demo_date" not in st.session_state: st.session_state.demo_date=date.today()
         page,demo=sidebar(s,st.session_state.demo_date,owner); st.session_state.demo_date=demo; refresh_statuses(s,demo,owner.id)
+        demo_now=ApplicationClock.simulated(demo).now()
+        ensure_scheduled_business_notifications(s,demo_now,owner.id)
+        process_due_notifications(s,demo_now,owner.id)
         if page=="Dashboard": dashboard(s,demo,owner.id,st.session_state.get("owner_name",owner.full_name))
         elif page=="Tenants": tenants_page(s,owner.id,demo)
         elif page=="Rent & Payments": rent_page(s,demo,owner.id)

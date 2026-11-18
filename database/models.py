@@ -61,11 +61,12 @@ class Payment(Base):
 
 class NotificationLog(Base):
     __tablename__ = "notification_logs"
-    __table_args__ = (UniqueConstraint("tenant_id", "rent_record_id", "notification_type", name="uq_notification"),)
+    __table_args__ = (UniqueConstraint("tenant_id", "rent_record_id", "notification_type", "event_key", name="uq_notification_event"),)
     id: Mapped[int] = mapped_column(primary_key=True)
     tenant_id: Mapped[int] = mapped_column(ForeignKey("tenants.id"), index=True)
     rent_record_id: Mapped[int] = mapped_column(ForeignKey("rent_records.id"), index=True)
     notification_type: Mapped[str] = mapped_column(String(30))
+    event_key: Mapped[str] = mapped_column(String(100), default="legacy", nullable=False, index=True)
     recipient: Mapped[str] = mapped_column(String(160))
     message: Mapped[str] = mapped_column(Text)
     scheduled_at: Mapped[datetime] = mapped_column(DateTime)
