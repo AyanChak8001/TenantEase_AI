@@ -1,0 +1,233 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R] /Count 5 >>
+endobj
+4 0 obj
+<< /Length 383 >>
+stream
+0.060 0.160 0.260 rg 0 0 595 842 re f
+0.120 0.550 0.500 rg 0 0 595 9 re f
+1.000 1.000 1.000 rg BT /F1 28 Tf 64.0 560.0 Td (TenantEase AI - AI Opportunity Report) Tj ET
+0.770 0.910 0.900 rg BT /F1 13 Tf 64.0 525.0 Td (Submission-ready technical documentation) Tj ET
+0.770 0.910 0.900 rg BT /F1 10 Tf 64.0 490.0 Td (Verified local proof of concept | Synthetic demonstration data) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1409 >>
+stream
+0.060 0.160 0.260 rg BT /F1 22 Tf 54.0 766.0 Td (Contents) Tj ET
+0.120 0.180 0.250 rg BT /F1 11 Tf 54.0 726.0 Td (TenantEase AI) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 708.0 Td (AI Opportunity Report) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 693.0 Td (Executive summary) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 678.0 Td (Company and industry context) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 663.0 Td (The property-management business problem) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 648.0 Td (Existing manual rent-collection challenges) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 633.0 Td (Proposed TenantEase AI opportunity) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 618.0 Td (Automated monthly rent collection workflow) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 603.0 Td (AI-based late-payment prediction) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 588.0 Td (Explainable risk classification) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 573.0 Td (Automated notification simulation) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 558.0 Td (Expected operational benefits) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 543.0 Td (Business feasibility) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 528.0 Td (Risks and limitations) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 513.0 Td (Future opportunities) Tj ET
+0.120 0.180 0.250 rg BT /F1 10 Tf 70.0 498.0 Td (Conclusion) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 5535 >>
+stream
+0.060 0.160 0.260 rg BT /F1 18 Tf 54.0 780.0 Td (TenantEase AI) Tj ET
+0.120 0.550 0.500 RG 1.5 w 54 756 m 541 756 l S
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 732.0 Td (AI Opportunity Report) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 712.0 Td (**Cynbit AI/ML Engineer Intern Assessment** **Status:** Proof of concept **Data) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 699.0 Td (classification:** Fully synthetic demonstration data **Prepared:** November 2026) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 681.0 Td (---) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 657.0 Td (Executive summary) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 637.0 Td (TenantEase AI is a proposed property-management product opportunity that combines) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 624.0 Td (dependable rent-collection workflow automation with predictive payment monitoring. It) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 611.0 Td (addresses a recurring operational pattern: property teams track monthly obligations, send) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 598.0 Td (reminders, reconcile payments, and decide which unpaid accounts need attention.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 580.0 Td (The proof of concept demonstrates an offline, local implementation. It generates 5,600) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 567.0 Td (synthetic rent-cycle records for 200 synthetic tenants, stores operational state in SQLite,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 554.0 Td (applies a configurable reminder and grace-period workflow, simulates notifications, and) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 541.0 Td (compares Logistic Regression with Random Forest for late-payment risk. The selected Random) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 528.0 Td (Forest achieved 0.7083 accuracy, 0.6016 precision, 0.7789 recall, 0.6789 F1, 0.7787) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 515.0 Td (ROC-AUC, 0.6747 PR-AUC, and 0.2044 Brier score on a tenant- and time-isolated synthetic) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 502.0 Td (holdout.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 484.0 Td (These results demonstrate technical feasibility of the prototype only. They are not) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 471.0 Td (evidence of production performance, customer outcomes, or confirmed Cynbit capabilities.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 447.0 Td (Company and industry context) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 427.0 Td (Property management is a recurring-operations domain. Each month creates a predictable) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 414.0 Td (sequence of obligations, expected payments, exceptions, reminders, and reconciliations. A) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 401.0 Td (product that makes this sequence visible and consistent can help owners and managers spend) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 388.0 Td (less time on manual status checking and more time on exceptions and respectful tenant) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 375.0 Td (communication.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 357.0 Td (This report frames TenantEase AI as a proposed opportunity for a Cynbit assessment. It does) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 344.0 Td (not assert company revenue, customer volume, existing product capability, or market) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 331.0 Td (statistics that were not provided.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 307.0 Td (The property-management business problem) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 287.0 Td (The core problem is not simply sending a reminder. It is maintaining a reliable, auditable) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 274.0 Td (view of every rent obligation and deciding what action is appropriate as the due date) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 261.0 Td (approaches.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 243.0 Td (For an owner or manager, the desired operating view includes:) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 225.0 Td (- Which rent obligations are upcoming, pending, overdue, or paid. - Which reminders have) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 212.0 Td (already been sent. - Whether a payment is recorded but still unverified. - Which tenants) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 199.0 Td (have historical indicators associated with late payment. - Which follow-up is appropriate) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 186.0 Td (without unsupported assumptions about a tenant.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 162.0 Td (Existing manual rent-collection challenges) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 142.0 Td (Manual processes can create avoidable operational risk:) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 124.0 Td (1. Reminder dates may be calculated inconsistently. 2. Grace periods may be applied) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 111.0 Td (differently from one cycle to another. 3. Repeated manual runs can create duplicate) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 98.0 Td (notifications. 4. A notification can be confused with a verified payment. 5. Owners may) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 85.0 Td (prioritize the most visible account rather than the highest-value exception. 6. Historical) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 72.0 Td (payment behavior may not be summarized before follow-up.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 5690 >>
+stream
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 788.0 Td (The opportunity is therefore workflow reliability plus decision support-not automated) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 775.0 Td (collection decisions.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 751.0 Td (Proposed TenantEase AI opportunity) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 731.0 Td (TenantEase AI can provide a focused SaaS extension for property managers:) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 713.0 Td (- A monthly rent-obligation ledger. - Configurable due dates and a documented grace period.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 700.0 Td (- Idempotent, simulated notification scheduling. - Verified payment recording and status) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 687.0 Td (transitions. - Historical late-payment risk scoring. - Explainable indicators and) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 674.0 Td (owner-approved recommendations. - A dashboard that makes collection health visible at) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 661.0 Td (portfolio level.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 643.0 Td (The product can start as a local proof of concept and later evolve toward controlled) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 630.0 Td (integrations with payment providers and communication systems.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 606.0 Td (Automated monthly rent collection workflow) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 586.0 Td (The implemented workflow is:) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 568.0 Td (1. Generate one rent obligation per active tenant and month. 2. Schedule the configured) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 555.0 Td (advance reminder. The assessment convention represents December 1 as a November 26) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 542.0 Td (reminder; the implementation uses a configurable five-calendar-day subtraction to reproduce) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 529.0 Td (that convention. 3. Keep an unpaid obligation pending on the due date and through the) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 516.0 Td (three-day grace period. 4. Mark the obligation overdue starting on the fifth day for the) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 503.0 Td (default first-of-month schedule. 5. Create an overdue alert only once per tenant, rent) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 490.0 Td (record, and notification type. 6. Record payments as pending verification. 7. Mark rent) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 477.0 Td (paid only after payment verification.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 459.0 Td (The date simulator exposes November 25, November 26, December 1, December 3, and December 5) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 446.0 Td (as a demonstration sequence without changing historical payment timestamps.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 422.0 Td (AI-based late-payment prediction) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 402.0 Td (The proof of concept trains a binary classifier for `late_payment`. Features are restricted) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 389.0 Td (to information available seven days before the due date and include rent amount, tenancy) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 376.0 Td (length, payment method, previous late count, average historical delay, last delay, on-time) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 363.0 Td (rate, previous payment count, and days until due.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 345.0 Td (The evaluation compares Logistic Regression and Random Forest. It uses a tenant- and) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 332.0 Td (time-isolated holdout: training uses tenants 1-160 through their first 22 cycles, while) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 319.0 Td (testing uses tenants 161-200 on their final six cycles. No tenant appears in both) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 306.0 Td (partitions, and test due dates occur after training due dates.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 282.0 Td (Explainable risk classification) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 262.0 Td (Prototype categories are configurable:) Tj ET
+0.090 0.320 0.380 rg 54 224 487 20 re f
+1.000 1.000 1.000 rg BT /F1 8 Tf 59.0 230.0 Td (Category) Tj ET
+1.000 1.000 1.000 rg BT /F1 8 Tf 302.5 230.0 Td (Probability) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 224 m 541 224 l S
+1.000 1.000 1.000 rg 54 204 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 210.0 Td (Low) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 210.0 Td (below 0.30) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 204 m 541 204 l S
+0.970 0.980 0.990 rg 54 184 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 190.0 Td (Medium) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 190.0 Td (0.30 to below 0.65) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 184 m 541 184 l S
+1.000 1.000 1.000 rg 54 164 487 20 re f
+0.120 0.180 0.250 rg BT /F1 8 Tf 59.0 170.0 Td (High) Tj ET
+0.120 0.180 0.250 rg BT /F1 8 Tf 302.5 170.0 Td (0.65 or above) Tj ET
+0.820 0.870 0.900 RG 0.6 w 54 164 m 541 164 l S
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 154.0 Td (Explanations summarize historical late count, average delay, and on-time rate. They) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 141.0 Td (describe statistical association, not cause. The dashboard distinguishes predicted risk) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 128.0 Td (from actual overdue status and requires sufficient verified tenant history before producing) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 115.0 Td (a tenant-level score.) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 5047 >>
+stream
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 782.0 Td (Automated notification simulation) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 762.0 Td (The notification engine is intentionally simulated. It stores recipient, message, scheduled) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 749.0 Td (time, simulated send time, type, and delivery status in `notification_logs`. It does not) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 736.0 Td (send email, SMS, WhatsApp, or other external messages. This makes the demonstration safe,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 723.0 Td (deterministic, and auditable while leaving an extension point for owner-approved) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 710.0 Td (integrations.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 686.0 Td (Expected operational benefits) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 666.0 Td (If validated with representative operational data, the opportunity could support:) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 648.0 Td (- More consistent reminder timing. - Fewer duplicate notifications. - Faster identification) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 635.0 Td (of overdue obligations. - A clearer separation between recorded and verified payments. -) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 622.0 Td (More focused owner follow-up. - Better visibility into collection trends.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 604.0 Td (These are expected workflow benefits, not measured production outcomes from this prototype.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 580.0 Td (Business feasibility) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 560.0 Td (The proof of concept is feasible for local deployment. It uses Python, Streamlit, SQLite,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 547.0 Td (SQLAlchemy, Pandas, NumPy, scikit-learn, Plotly, Joblib, and Pytest. It needs no paid API,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 534.0 Td (API key, external messaging provider, or real tenant information.) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 516.0 Td (The next feasibility questions are data access, consent and communication policy, payment) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 503.0 Td (reconciliation, identity and access management, model monitoring, and operational ownership) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 490.0 Td (of recommendations.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 466.0 Td (Risks and limitations) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 446.0 Td (- The dataset is synthetic and may not represent real payment behavior. - Model) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 433.0 Td (probabilities and thresholds are not production-calibrated. - The current evaluation is not) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 420.0 Td (prospective validation. - Historical patterns can encode unfair or incomplete signals. -) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 407.0 Td (The prototype does not authenticate users or enforce role-based access. - Notifications are) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 394.0 Td (simulated rather than delivered. - Payment-provider reconciliation is not implemented. -) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 381.0 Td (Demo tenants may lack sufficient verified history for scoring.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 357.0 Td (Future opportunities) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 337.0 Td (Potential next steps include probability calibration, prospective monitoring, drift) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 324.0 Td (detection, fairness review, payment-provider reconciliation, owner approval workflows,) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 311.0 Td (consent-aware communications, role-based access, audit exports, portfolio-level) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 298.0 Td (forecasting, and a carefully governed LLM integration for message drafting. Any future AI) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 285.0 Td (layer should remain grounded in stored facts and require human approval for outbound) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 272.0 Td (communication.) Tj ET
+0.060 0.350 0.340 rg BT /F1 13 Tf 54.0 248.0 Td (Conclusion) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 228.0 Td (TenantEase AI demonstrates a coherent product opportunity: pair deterministic) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 215.0 Td (rent-collection workflow with explainable, conservative payment-risk prioritization. The) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 202.0 Td (strongest near-term value is operational consistency and visibility. The model is a) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 189.0 Td (decision-support component, not an automated default decision-maker. Validation with) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 176.0 Td (representative, consented operational data is the necessary next step before claims about) Tj ET
+0.120 0.180 0.250 rg BT /F1 9.2 Tf 54.0 163.0 Td (real-world impact.) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 2 0 R /F2 2 0 R >> >> /Contents 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000134 00000 n 
+0000000217 00000 n 
+0000000651 00000 n 
+0000000787 00000 n 
+0000002248 00000 n 
+0000002384 00000 n 
+0000007971 00000 n 
+0000008107 00000 n 
+0000013850 00000 n 
+0000013988 00000 n 
+0000019088 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+19226
+%%EOF

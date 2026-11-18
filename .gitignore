@@ -1,0 +1,15 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Local-only runtime state; synthetic CSVs and reports are shareable artifacts.
+*.db
+demo/*.db
+logs/*.log
+
+# Generated local model; retrain from the reproducible dataset when needed.
+models/*.pkl
+!models/.gitkeep
+.streamlit/secrets.toml
